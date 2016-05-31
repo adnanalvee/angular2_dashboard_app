@@ -23,7 +23,8 @@ var AppComponent = (function () {
             selector: 'my-app',
             template: "\n    <h1>{{title}}</h1>\n    <nav>\n        <a [routerLink]=\"['Heroes']\">Heroes</a>\n        <a [routerLink]=\"['Dashboard']\">Dashboard</a>  \n    </nav>    \n        <router-outlet></router-outlet>\n   ",
             directives: [router_deprecated_1.ROUTER_DIRECTIVES],
-            providers: [router_deprecated_1.ROUTER_PROVIDERS, hero_service_1.HeroService]
+            providers: [router_deprecated_1.ROUTER_PROVIDERS, hero_service_1.HeroService],
+            styleUrls: ['app/app.component.css']
         }),
         router_deprecated_1.RouteConfig([
             {
